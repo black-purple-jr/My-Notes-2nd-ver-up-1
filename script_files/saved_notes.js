@@ -13,7 +13,7 @@ const cancelButton = document.getElementById('cancel');
 // const success = "Success";
 
 
-function goToHomePage() { window.location.href = 'homePage.html' };
+function goToHomePage() { window.location.href = 'home_page.html' };
 
 // from codate.io
 export function getFormattedDate() {

@@ -1,5 +1,5 @@
 "use strict";
-import { notes, getFormattedDate } from "./savedNotes.js";
+import { notes, getFormattedDate } from "./saved_notes.js";
 
 const urlParams = new URLSearchParams(window.location.search);
 const noteId = urlParams.get('id');
@@ -11,7 +11,7 @@ const noteDeleteButton = document.getElementById("editNoteDeleteButton");
 
 let currentNote;
 
-function goToHomePage() { window.location.href = 'homePage.html' };
+function goToHomePage() { window.location.href = 'home_page.html' };
 
 for (let note of notes) {
     if (note.id === noteId) {
@@ -65,7 +65,7 @@ function saveEditedNote() {
         id: currentNote.id,
         content: noteContentInput.value,
         title: noteTitleInput.value,
-        date : `Edited on ${getFormattedDate()} at ${time}`,
+        date: `Edited on ${getFormattedDate()} at ${time}`,
     }
 
     // if (notes[noteIndex].noteContent === "" && notes[noteIndex].noteTitle === "") {
