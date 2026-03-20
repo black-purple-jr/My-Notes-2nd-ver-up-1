@@ -1,0 +1,71 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+    gap: 20px;
+    grid-auto-rows: 170px;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: #1d1d1d;
+    padding: 20px;
+    border: 1.5px solid #292929;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 20px;
+    height: 75%;
+    transition: ease-in-out .35s;
+    z-index: 1;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px #1a1a1a;
+    transform: translateY(-1.5%);
+}
+
+.card-title {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+}
+
+.card-content {
+    color: #9e9e9e;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: .85em;
+    /* white-space: nowrap; */
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.card-date {
+    margin-bottom: 0;
+    font-size: 0.75em;
+    color: #777777;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

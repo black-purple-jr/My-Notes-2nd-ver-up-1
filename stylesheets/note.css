@@ -1,0 +1,148 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #cccccc;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+header{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+header h1{
+    text-transform: capitalize;
+    font-weight: 100;
+    color: #d4d4d4;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.page{
+    max-width: 800px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+.form-group h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #b9b9b9;
+}
+
+.form-group input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #535353;
+    background-color: #121212;
+    height: 50px;
+    margin: auto;
+    transition: ease-in-out .25s;
+    color: #cccccc;
+    font-size: large;
+}
+
+.form-group input::placeholder{
+    font-weight: 100;
+    letter-spacing: .5px;
+}
+
+.form-group input:focus{
+    border-bottom: 1px solid #cccccc;
+}
+
+.form-group textarea{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #535353;
+    background-color: #121212;
+    margin: auto;
+    transition: ease-in-out .25s;
+    color: #cccccc;
+    font-size: large;
+    resize: none;
+    height: 320px;
+    width: 100%;
+    scrollbar-color: #707070 #121212;
+}
+.form-group textarea::placeholder{
+    font-weight: 350;
+    letter-spacing: .5px;
+}
+
+.form-group textarea:focus{
+    border-bottom: 1px solid #cccccc;
+}
+
+.form-btn{
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    gap: 10px;
+    display: flex;
+    width: 800px;
+}
+
+.form-btn button{
+    box-sizing: border-box;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid #535353;
+    color: #cccccc;
+    border-radius: 6px;
+    height: 50px;
+    text-transform: capitalize;
+    font-weight: 500;
+    /* cursor: pointer;*/
+}
+
+button.red-btn{
+    transition: ease-in-out .5s;
+    color: #d84444;
+    border: 1px solid #d84444;
+    background: transparent;
+    font-size: 1em;
+}
+
+button.red-btn:hover{
+    background-color: #d84444;
+    color: #cccccc;
+}
+
+button.white-btn{
+    color: #121212;
+    font-size: 1em;
+    background-color: #cccccc;
+    -webkit-user-select: none;
+    user-select: none;
+    
+}
+.white-btn:disabled{
+    color: #121212;
+    background-color: #7a7a7a;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.grey{
+    transition: ease-in-out .5s;
+    background: transparent;
+    font-size: 1em;
+}
+
+.grey:hover{
+    background-color: #292929;
+}
+
+a svg{
+    color: #cccccc;
+}

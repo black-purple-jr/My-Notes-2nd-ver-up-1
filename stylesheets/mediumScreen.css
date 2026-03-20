@@ -1,0 +1,22 @@
+@media (min-width:575px) and (max-width:830px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 10px;
+    }
+
+    .card {
+        height: 130px;
+    }
+
+    .central-div {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    header {
+        width: 92vw;
+        margin: 0 20px;
+    }
+}

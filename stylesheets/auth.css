@@ -1,0 +1,106 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #cccccc;
+}
+
+h1 {
+    font-weight: 300;
+    text-align: center;
+}
+
+input {
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: #1d1d1d;
+    padding-left: 10px;
+    color: #bbbbbb;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    font-size: 0.9rem;
+    color: #b9b9b9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #292929;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.form-container {
+    width: 800px;
+    margin: auto;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+button {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    transition: ease-in-out 0.5s;
+}
+
+button:hover {
+    background-color: #a5a5a5;
+}
+
+a {
+    color: #cccccc;
+    position: relative;
+}
+
+a#forgotPassword {
+    right: -150px;
+    font-size: 0.95em;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+}
+
+/* form a:hover {
+  text-decoration: underline;
+} */
+
+.link {
+    text-decoration: underline;
+}
+
+@media (max-width: 575px) {
+    .form-container {
+        width: auto;
+        height: auto;
+    }
+
+    form h1 {
+        font-size: 28px;
+    }
+
+    form {
+        width: auto;
+    }
+}
+
+@media (max-width: 860px) and (min-width: 575px) {
+    .form-container {
+        width: auto;
+    }
+
+    form {
+        width: auto;
+    }
+}
